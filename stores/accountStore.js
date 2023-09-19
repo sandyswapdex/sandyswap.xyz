@@ -1,18 +1,10 @@
-import async from 'async';
-import {
-  ACTIONS,
-  CONTRACTS
-} from './constants';
-import Multicall from '@dopex-io/web3-multicall';
+import async from "async";
+import { ACTIONS, CONTRACTS } from "./constants";
+import Multicall from "@dopex-io/web3-multicall";
 
-import {
-  injected,
-  walletconnect,
-  walletlink,
-  network
-} from './connectors';
+import { injected, walletconnect, network } from "./connectors";
 
-import Web3 from 'web3';
+import Web3 from "web3";
 
 class Store {
   constructor(dispatcher, emitter) {
@@ -28,14 +20,14 @@ class Store {
         MetaMask: injected,
         TrustWallet: injected,
         WalletConnect: walletconnect,
-        WalletLink: walletlink,
+        // WalletLink: walletlink,
       },
       gasPrices: {
         standard: 90,
         fast: 100,
         instant: 130,
       },
-      gasSpeed: 'fast',
+      gasSpeed: "fast",
       currentBlock: 12906197,
     };
 
@@ -48,7 +40,7 @@ class Store {
           default: {
           }
         }
-      }.bind(this),
+      }.bind(this)
     );
   }
 
@@ -67,7 +59,8 @@ class Store {
     injected.isAuthorized().then((isAuthorized) => {
       const { supportedChainIds } = injected;
       // fall back to ethereum mainnet if chainId undefined
-      const { chainId = process.env.NEXT_PUBLIC_CHAINID } = window.ethereum || {};
+      const { chainId = process.env.NEXT_PUBLIC_CHAINID } =
+        window.ethereum || {};
       const parsedChainId = parseInt(chainId, 16);
       const isChainSupported = supportedChainIds.includes(parsedChainId);
       if (!isChainSupported) {
@@ -81,7 +74,7 @@ class Store {
           .then((a) => {
             this.setStore({
               account: { address: a.account },
-              web3context: { library: { provider: a.provider } }
+              web3context: { library: { provider: a.provider } },
             });
             this.emitter.emit(ACTIONS.ACCOUNT_CONFIGURED);
           })
@@ -110,8 +103,8 @@ class Store {
     if (window.ethereum) {
       this.updateAccount();
     } else {
-      window.removeEventListener('ethereum#initialized', this.updateAccount);
-      window.addEventListener('ethereum#initialized', this.updateAccount, {
+      window.removeEventListener("ethereum#initialized", this.updateAccount);
+      window.addEventListener("ethereum#initialized", this.updateAccount, {
         once: true,
       });
     }
@@ -119,10 +112,10 @@ class Store {
 
   updateAccount = () => {
     const that = this;
-    const res = window.ethereum.on('accountsChanged', function (accounts) {
+    const res = window.ethereum.on("accountsChanged", function (accounts) {
       that.setStore({
         account: { address: accounts[0] },
-        web3context: { library: { provider: window.ethereum } }
+        web3context: { library: { provider: window.ethereum } },
       });
       that.emitter.emit(ACTIONS.ACCOUNT_CHANGED);
       that.emitter.emit(ACTIONS.ACCOUNT_CONFIGURED);
@@ -133,25 +126,25 @@ class Store {
       });
     });
 
-    window.ethereum.on('chainChanged', function (chainId) {
+    window.ethereum.on("chainChanged", function (chainId) {
       const supportedChainIds = [process.env.NEXT_PUBLIC_CHAINID];
-      const parsedChainId = (parseInt(chainId+'', 16)+'');
+      const parsedChainId = parseInt(chainId + "", 16) + "";
       const isChainSupported = supportedChainIds.includes(parsedChainId);
       that.setStore({ chainInvalid: !isChainSupported });
       that.emitter.emit(ACTIONS.ACCOUNT_CHANGED);
       that.emitter.emit(ACTIONS.ACCOUNT_CONFIGURED);
 
-      that.configure()
+      that.configure();
     });
   };
 
   getGasPrices = async (payload) => {
     const gasPrices = await this._getGasPrices();
-    let gasSpeed = localStorage.getItem('yearn.finance-gas-speed');
+    let gasSpeed = localStorage.getItem("yearn.finance-gas-speed");
 
     if (!gasSpeed) {
-      gasSpeed = 'fast';
-      localStorage.getItem('yearn.finance-gas-speed', 'fast');
+      gasSpeed = "fast";
+      localStorage.getItem("yearn.finance-gas-speed", "fast");
     }
 
     this.setStore({ gasPrices: gasPrices, gasSpeed: gasSpeed });
@@ -170,16 +163,14 @@ class Store {
       };
     } catch (e) {
       console.log(e);
-      return {
-
-      }
+      return {};
     }
   };
 
   getGasPrice = async (speed) => {
     let gasSpeed = speed;
     if (!speed) {
-      gasSpeed = this.getStore('gasSpeed');
+      gasSpeed = this.getStore("gasSpeed");
     }
 
     try {
@@ -194,11 +185,11 @@ class Store {
   };
 
   getWeb3Provider = async () => {
-    let web3context = this.getStore('web3context');
+    let web3context = this.getStore("web3context");
     let provider = null;
 
     if (!web3context) {
-      provider = network.providers['1'];
+      provider = network.providers["1"];
     } else {
       provider = web3context.library.provider;
     }
@@ -210,12 +201,12 @@ class Store {
   };
 
   getMulticall = async () => {
-    const web3 = await this.getWeb3Provider()
+    const web3 = await this.getWeb3Provider();
     const multicall = new Multicall({
       multicallAddress: CONTRACTS.MULTICALL_ADDRESS,
       provider: web3,
-    })
-    return multicall
+    });
+    return multicall;
   };
 }
 
