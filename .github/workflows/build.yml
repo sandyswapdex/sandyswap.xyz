@@ -29,7 +29,7 @@ jobs:
       - name: Build
         run: |
           yarn
-          NEXT_PUBLIC_CHAINID=1101 npm run build
+          NEXT_PUBLIC_CHAINID=1101 NEXT_PUBLIC_API=https://api.sandyswap.xyz npm run build
           npm run export
           echo sandyswap.xyz > ./out/CNAME
           touch out/.nojekyll
