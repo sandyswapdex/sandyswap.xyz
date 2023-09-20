@@ -1711,6 +1711,9 @@ class Store {
         CONTRACTS.ROUTER_ABI,
         CONTRACTS.ROUTER_ADDRESS
       );
+
+      console.log("sending", routerContract, func, params, account);
+
       this._callContractWait(
         web3,
         routerContract,
@@ -2135,6 +2138,7 @@ class Store {
         CONTRACTS.ROUTER_ABI,
         CONTRACTS.ROUTER_ADDRESS
       );
+
       this._callContractWait(
         web3,
         routerContract,
@@ -3319,20 +3323,48 @@ class Store {
         .times(sendSlippage)
         .toFixed(0);
 
-      this._callContractWait(
-        web3,
-        routerContract,
-        "removeLiquidity",
-        [
-          token0.address,
+      let callargs = [
+        token0.address,
+        token1.address,
+        pair.isStable,
+        sendAmount,
+        sendAmount0Min,
+        sendAmount1Min,
+        account.address,
+        deadline,
+      ];
+
+      let method = "removeLiquidity";
+
+      if (token0.symbol === "WETH") {
+        method = "removeLiquidityETH";
+        callargs = [
           token1.address,
+          pair.isStable,
+          sendAmount,
+          sendAmount1Min,
+          sendAmount0Min,
+          account.address,
+          deadline,
+        ];
+      } else if (token1.symbol === "WETH") {
+        method = "removeLiquidityETH";
+        callargs = [
+          token0.address,
           pair.isStable,
           sendAmount,
           sendAmount0Min,
           sendAmount1Min,
           account.address,
           deadline,
-        ],
+        ];
+      }
+
+      this._callContractWait(
+        web3,
+        routerContract,
+        method,
+        callargs,
         account,
         gasPrice,
         null,

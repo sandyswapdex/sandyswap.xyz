@@ -14,7 +14,7 @@ export const VE_TOKEN_DECIMALS = 18;
 export const VE_TOKEN_LOGO = "https://prod.solidly.exchange/Sandy Swap-O.svg";
 export const VE_TOKEN_ABI = abis.veTokenABI;
 
-export const WETH_ADDRESS = "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83";
+export const WETH_ADDRESS = "0x4F9A0e7FD2Bf6067db6994CF12E4495Df938E6e9";
 export const WETH_NAME = "Wrapped Ether";
 export const WETH_SYMBOL = "WETH";
 export const WETH_DECIMALS = 18;

@@ -2,6 +2,7 @@ import Swap from "./swap";
 import Liquidity from "./liquidity";
 import LiquidityAddress from "./liquidity/[address]";
 import Vest from "./vest";
+import Home from "./home";
 import Vote from "./vote";
 import Rewards from "./rewards";
 import Whitelist from "./whitelist";
@@ -15,7 +16,7 @@ function Route({ changeTheme, ...props }) {
   if (activePath.includes("/swap")) {
     return <Swap props={props} changeTheme={changeTheme} />;
   } else if (activePath.includes("/liquidity")) {
-    if(activePath.includes("/liquidity/0x")) {
+    if (activePath.includes("/liquidity/0x")) {
       return <LiquidityAddress props={props} changeTheme={changeTheme} />;
     } else {
       return <Liquidity props={props} changeTheme={changeTheme} />;
@@ -31,9 +32,9 @@ function Route({ changeTheme, ...props }) {
   } else if (activePath.includes("/bribe")) {
     return <Bribe props={props} changeTheme={changeTheme} />;
   } else if (activePath.includes("/")) {
-    return <Swap props={props} changeTheme={changeTheme} />;
+    return <Home props={props} changeTheme={changeTheme} />;
   } else {
-    return <Swap props={props} changeTheme={changeTheme} />;
+    return <Home props={props} changeTheme={changeTheme} />;
   }
 }
 
