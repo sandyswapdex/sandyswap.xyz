@@ -139,7 +139,6 @@
 .actionsContainer {
   width: 100%;
   margin-top: 20px;
-
 }
 
 .actionButtonText {
@@ -187,7 +186,7 @@
 }
 
 .buttonOverride {
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
   font-weight: 700 !important;
 }
@@ -251,7 +250,7 @@
   justify-content: center;
   border-radius: 30px;
   font-size: 11px !important;
-  border: 1px solid rgba(104,108,122,0.2);
+  border: 1px solid rgba(104, 108, 122, 0.2);
   position: absolute;
   top: -2px;
   right: 3px;
@@ -284,9 +283,6 @@
 .vestPeriodLabel > span {
   font-size: 12px !important;
 }
-
-
-
 
 .vestingInfoContainer {
   padding: 12px;
@@ -329,10 +325,6 @@
   font-size: 14px !important;
 }
 
-
-
-
-
 .error {
   border: 1px solid #dc3545;
 }
@@ -343,7 +335,7 @@
   border-radius: 10px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
 }
 
 .massiveInputAssetSelect {
@@ -376,7 +368,7 @@
 .displayAssetIcon {
   border: 1px solid rgba(126, 153, 176, 0.2);
   border-radius: 50px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   width: 100px;
   height: 100px;
   padding: 10px;
@@ -385,7 +377,7 @@
 .displayAssetIconWhite {
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 50px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   width: 100px;
   height: 100px;
   padding: 10px;
@@ -444,7 +436,7 @@
   align-items: center;
   justify-content: center;
   background: none;
-  border: 1px solid #212B48;
+  border: 1px solid #212b48;
   border-radius: 10px;
   width: calc(100% - 0px);
   margin: 0px 0px 15px 0px;
@@ -459,7 +451,7 @@
 }
 
 .backIcon {
-  color: #06D3D7 !important;
+  color: #9b9b9b !important;
 }
 
 .titleText {
@@ -496,7 +488,7 @@
 
 .vestInfoContainer > .mainSection > .values > .val {
   font-size: 10px !important;
-  padding: 3px 0px
+  padding: 3px 0px;
 }
 
 .vestInfoContainer > .seccondSection {
@@ -505,9 +497,8 @@
 .vestInfoContainer > .seccondSection > .info {
   font-size: 12px !important;
   font-style: italic;
-  padding: 3px 0px !important
+  padding: 3px 0px !important;
 }
-
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -526,5 +517,4 @@
 }
 
 @media screen and (max-width: 560px) {
-
 }

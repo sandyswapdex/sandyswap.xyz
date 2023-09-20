@@ -14,7 +14,9 @@
   border-radius: 0 !important;
 }
 
-.hidden { display: none !important; }
+.hidden {
+  display: none !important;
+}
 
 .userMenu {
   z-index: 10030 !important;
@@ -25,7 +27,7 @@
 }
 
 .ddIcon {
-  color: #7E99B0;
+  color: #7e99b0;
   margin-left: 5px;
   margin-top: -2px;
   margin-right: -8px;
@@ -34,7 +36,7 @@
 .userMenuIcon {
   padding: 0 !important;
   margin-right: -30px;
-  color: #06D3D7 !important;
+  color: #9b9b9b !important;
 }
 
 .appLogo {
@@ -82,7 +84,7 @@
 
 .intro {
   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 .aboutmodal dialog {
@@ -96,7 +98,7 @@
 }
 
 .abouttext a {
-  color: #374DFA !important;
+  color: #374dfa !important;
 }
 
 .abouttitle {
@@ -119,7 +121,7 @@
   align-items: center;
   margin-left: 14px !important;
   min-height: 50px;
-  background-color: rgb(33, 43, 72) !important;
+  background-color: rgb(53, 53, 53) !important;
   border: 0 !important;
   border-radius: 40px !important;
   color: rgba(255, 255, 255, 0.87) !important;
@@ -134,13 +136,13 @@
 }
 
 .switchNetworkBtn {
-  background: rgba(6,211,215,0.3) !important;
-  color: rgba(6,211,215,1) !important;
+  background: rgba(6, 211, 215, 0.3) !important;
+  color: rgba(6, 211, 215, 1) !important;
   border-radius: 60px !important;
   padding: 12px 24px 14px 24px !important;
   font-weight: 700 !important;
   text-transform: none !important;
-  border: 1px solid rgba(6,211,215,1) !important;
+  border: 1px solid rgba(6, 211, 215, 1) !important;
   margin-top: 30px !important;
   transform: scale(0.9);
   -webkit-transition: all 300ms ease-out;
@@ -151,10 +153,10 @@
 }
 
 .switchNetworkBtn:hover {
-  background: rgba(6,211,215,1) !important;
+  background: rgba(6, 211, 215, 1) !important;
   color: #111729 !important;
   text-transform: none !important;
-  border: 1px solid rgba(6,211,215,1) !important;
+  border: 1px solid rgba(6, 211, 215, 1) !important;
   transform: scale(0.9);
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
@@ -168,8 +170,8 @@
   font-size: 12px !important;
   margin-left: 14px !important;
   background: linear-gradient(-45deg, #23a6d5, #234ce7);
-	background-size: 200% 200%;
-	animation: gradient 35s ease infinite;
+  background-size: 200% 200%;
+  animation: gradient 35s ease infinite;
   color: #fff !important;
   -webkit-transition: background-image 1s ease-in-out;
   transition: background-image 1s ease-in-out;
@@ -178,19 +180,19 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .prettyButton:hover {
-  background-image: linear-gradient(270deg ,#1c46f5 0,#0005d3) !important;
+  background-image: linear-gradient(270deg, #1c46f5 0, #0005d3) !important;
 }
 
 .accountIcon {
@@ -206,19 +208,19 @@
 }
 
 .metamask {
-  background-image: url('/connectors/icn-metamask.svg');
+  background-image: url("/connectors/icn-metamask.svg");
 }
 .ledger {
-  background-image: url('/connectors/icn-ledger.svg');
+  background-image: url("/connectors/icn-ledger.svg");
 }
 .coinbase {
-  background-image: url('/connectors/coinbaseWalletIcon.svg');
+  background-image: url("/connectors/coinbaseWalletIcon.svg");
 }
 .torus {
-  background-image: url('/connectors/torus.jpg');
+  background-image: url("/connectors/torus.jpg");
 }
 .trust {
-  background-image: url('/connectors/trustWallet.png');
+  background-image: url("/connectors/trustWallet.png");
 }
 
 .themeSelectContainer {
@@ -229,7 +231,7 @@
 .switchIcon {
   font-size: 1rem !important;
   margin-top: 0.275rem;
-  color: rgba(108,108,123, 1);
+  color: rgba(108, 108, 123, 1);
 }
 
 .switchIcon:hover {
@@ -259,7 +261,7 @@
   min-width: 100%;
   height: 100vh;
   flex-wrap: wrap;
-  background: rgba(17,23,42,0.9);
+  background: rgba(17, 23, 42, 0.9);
   z-index: 1100 !important;
 }
 
@@ -267,7 +269,7 @@
 }
 
 .ErrorTxt {
-  color: #FFF;
+  color: #fff;
   max-width: 420px;
   line-height: 1.5em !important;
   font-size: 1.4em !important;
@@ -284,7 +286,7 @@
   min-width: 150px;
   width: calc(50% - 678px);
   font-size: 24px !important;
-  color: #1c46f5 ;
+  color: #1c46f5;
 }
 
 .flex1 {
@@ -303,14 +305,14 @@
 }
 
 .link:hover {
-  border-bottom: 2px solid #1c46f5 ;
+  border-bottom: 2px solid #1c46f5;
   margin-bottom: 0px !important;
 }
 
 .linkActive {
   margin: 2px 0px !important;
   margin-bottom: 0px !important;
-  border-bottom: 2px solid #1c46f5 ;
+  border-bottom: 2px solid #1c46f5;
   margin-right: 24px !important;
   cursor: pointer;
 }
@@ -323,12 +325,11 @@
   font-weight: 200 !important;
   border: 1px solid rgb(6, 211, 215) !important;
   border-radius: 10px;
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   padding: 16px !important;
 }
 
 @media screen and (max-width: 1200px) {
-
   .accountButton {
     display: flex;
     align-items: center;

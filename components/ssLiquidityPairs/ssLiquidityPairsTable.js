@@ -352,18 +352,18 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     left: "0px",
     top: "0px",
-    border: "3px solid rgb(25, 33, 56)",
+    border: "3px solid rgb(41, 41, 41)",
     borderRadius: "30px",
-    background: "rgb(25, 33, 56)",
+    background: "rgb(41, 41, 41)",
   },
   img2Logo: {
     position: "absolute",
     left: "23px",
     zIndex: "1",
     top: "0px",
-    border: "3px solid rgb(25, 33, 56)",
+    border: "3px solid rgb(41, 41, 41)",
     borderRadius: "30px",
-    background: "rgb(25, 33, 56)",
+    background: "rgb(41, 41, 41)",
   },
   overrideTableHead: {
     borderBottom: "1px solid rgba(126,153,176,0.15) !important",
@@ -385,7 +385,7 @@ const useStyles = makeStyles((theme) => ({
   buttonOverride: {
     width: "100%",
     color: "rgb(6, 211, 215)",
-    background: "rgb(23, 52, 72)",
+    background: "rgb(52, 52, 52)",
     fontWeight: "700",
     "&:hover": {
       background: "rgb(19, 44, 60)",
@@ -405,7 +405,7 @@ const useStyles = makeStyles((theme) => ({
   filterButton: {
     background: "#111729",
     border: "1px solid rgba(126,153,176,0.3)",
-    color: "#06D3D7",
+    color: "#9b9b9b",
     width: "100%",
     height: "94.5%",
     borderRadius: "10px",
@@ -439,7 +439,7 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: "1px solid rgba(126,153,176,0.2)",
   },
   infoIcon: {
-    color: "#06D3D7",
+    color: "#9b9b9b",
     fontSize: "16px",
     marginLeft: "10px",
   },

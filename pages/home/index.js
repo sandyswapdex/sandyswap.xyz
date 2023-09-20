@@ -51,7 +51,7 @@ function SiteLogo(props) {
           fill="#FFFFFF"
           d="M50.3,17.1V0.5H55v12.6H63v4L50.3,17.1z"
         />
-        <circle fill="#06D3D7" cx="32.4" cy="8.8" r="8.8" />
+        <circle fill="#9b9b9b" cx="32.4" cy="8.8" r="8.8" />
         <path
           id="Path_7"
           fill="#FFFFFF"

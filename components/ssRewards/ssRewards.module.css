@@ -15,7 +15,7 @@
 }
 
 .helpText {
-  color: rgba(126,153,176,0.9);
+  color: rgba(126, 153, 176, 0.9);
   margin: 0 15px 0 0 !important;
   padding: 15px 0;
 }
@@ -44,7 +44,7 @@
 }
 
 .buttonOverride {
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
   font-weight: 700 !important;
   width: 100%;
@@ -61,20 +61,19 @@
   margin-top: 15px;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
-  border: 1px solid rgba(126,153,176,0.2);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(126, 153, 176, 0.2);
 }
 
 .filterListTitle {
   margin-bottom: 10px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(126,153,176,0.2);
+  border-bottom: 1px solid rgba(126, 153, 176, 0.2);
 }
 
 .filterButton {
   margin-right: 30px !important;
 }
-
 
 .mediumInputContainer {
   display: flex;
@@ -82,7 +81,7 @@
   border-radius: 10px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   padding: 0 20px;
   min-height: 60px;
 }
@@ -135,7 +134,7 @@
   font-weight: 200 !important;
   border: 1px solid rgb(6, 211, 215) !important;
   border-radius: 10px;
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   padding: 21.5px !important;
 }
 

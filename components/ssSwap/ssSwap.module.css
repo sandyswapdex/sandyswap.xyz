@@ -14,8 +14,8 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
-  -webkit-box-shadow: 0 13px 30px 0 rgba(7,9,18,0.1) !important;
-  box-shadow: 0 13px 30px 0 rgba(7,9,18,0.1) !important;
+  -webkit-box-shadow: 0 13px 30px 0 rgba(7, 9, 18, 0.1) !important;
+  box-shadow: 0 13px 30px 0 rgba(7, 9, 18, 0.1) !important;
 }
 
 .smallerText {
@@ -36,10 +36,10 @@
   border-radius: 10px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   max-width: 80px;
   min-height: 50px;
-  padding: 20px 12px 4px 12px ;
+  padding: 20px 12px 4px 12px;
 }
 
 .massiveInputContainer {
@@ -48,7 +48,7 @@
   border-radius: 10px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
 }
 
 .error {
@@ -138,7 +138,7 @@
 .displayAssetIcon {
   border: 1px solid rgba(126, 153, 176, 0.2);
   border-radius: 50px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   width: 100px;
   height: 100px;
   padding: 10px;
@@ -147,7 +147,7 @@
 .displayAssetIconSmall {
   border: 1px solid rgba(126, 153, 176, 0.2);
   border-radius: 30px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   padding: 6px;
 }
 
@@ -157,7 +157,7 @@
   position: absolute;
   top: 60px;
   right: 0px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
 }
 
 .displayChainIconSmall {
@@ -166,7 +166,7 @@
   position: absolute;
   top: 30px;
   right: -5px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
 }
 
 .inputTitleContainerSlippage {
@@ -261,7 +261,7 @@
 }
 
 .swapConfirmSide {
-  border: 1px solid rgba(128, 128, 128,  0.5);
+  border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 10px;
   padding: 24px 6px;
 }
@@ -297,7 +297,6 @@
 }
 
 .textFlex {
-
 }
 
 .flexy2 {
@@ -360,7 +359,7 @@
 }
 
 .swapIconSubContainer {
-  background: #161B2C;
+  background: #161b2c;
   border-radius: 9px;
   height: 38px;
   z-index: 1;
@@ -370,7 +369,7 @@
   cursor: pointer;
   padding: 6px;
   font-size: 30px !important;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   margin: 4px;
   border-radius: 6px;
 }
@@ -451,7 +450,7 @@
 }
 
 .info {
-  border-left: 5px solid #2F80ED;
+  border-left: 5px solid #2f80ed;
 }
 
 .success {
@@ -527,7 +526,7 @@
 .depositInfoHeading {
   width: 100%;
   font-weight: 700 !important;
-  color: #06D3D7 !important;
+  color: #9b9b9b !important;
   padding-bottom: 15px !important;
   border-bottom: 1px solid rgba(126, 153, 176, 0.2);
   font-size: 14px !important;
@@ -560,7 +559,7 @@
 }
 
 .buttonOverride {
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
   font-weight: 700 !important;
 }
@@ -579,7 +578,7 @@
 
 .line {
   flex: 1;
-  border-bottom: 1px dashed rgba(126,153,176,0.6);
+  border-bottom: 1px dashed rgba(126, 153, 176, 0.6);
   text-align: center;
   margin-top: -4px;
   position: relative;
@@ -594,13 +593,13 @@
 
 .stabIndicator {
   font-size: 13px !important;
-  color: #06D3D7;
+  color: #9b9b9b;
 }
 
 .routeArrow {
   width: 20px;
   height: 10px;
-  background: rgb(25, 33, 56);
+  background: rgb(41, 41, 41);
   font-size: 10px !important;
   margin: auto;
   margin-bottom: -4px;
@@ -608,7 +607,7 @@
 
 .routeArrowIcon {
   font-size: 13px !important;
-  color: #06D3D7;
+  color: #9b9b9b;
 }
 
 .quoteLoader {
@@ -623,7 +622,7 @@
   font-weight: 200 !important;
   border: 1px solid rgb(6, 211, 215) !important;
   border-radius: 10px;
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   padding: 24px !important;
   min-width: 100%;
 }
@@ -640,7 +639,7 @@
   font-weight: 200 !important;
   border: 1px solid rgb(6, 211, 215) !important;
   border-radius: 10px;
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   padding: 24px !important;
   min-width: 100%;
 }

@@ -10,7 +10,7 @@
 }
 
 .smallText {
-  color: rgba(126,153,176,0.9);
+  color: rgba(126, 153, 176, 0.9);
   margin: 0 15px 0 0 !important;
   padding: 18px 0;
 }
@@ -70,7 +70,7 @@
 }
 
 .buttonOverride {
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
   font-weight: 700 !important;
   width: 100%;
@@ -81,9 +81,8 @@
   background: rgb(19, 44, 60) !important;
 }
 
-
 .buttonOverrideFixed {
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
   font-weight: 700 !important;
   min-width: 200px !important;
@@ -120,7 +119,7 @@
   border-radius: 10px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   padding: 0 20px;
 }
 

@@ -19,7 +19,7 @@
 }
 
 .helpIcon {
-  border: 1px solid rgba(104,108,122,0.2);
+  border: 1px solid rgba(104, 108, 122, 0.2);
   border-radius: 50px;
   width: 26px;
   height: 26px;
@@ -81,7 +81,7 @@
   width: 100%;
   background: linear-gradient(-45deg, #23a6d5, #234ce7);
   background-size: 400% 400%;
-	animation: gradient 35s ease infinite;
+  animation: gradient 35s ease infinite;
   display: inline-block;
   position: absolute;
   left: 0px;
@@ -104,15 +104,15 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .inputTitleContainer {
@@ -217,7 +217,7 @@
 
 .loadingCircle {
   margin-left: 6px !important;
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 .toggleButtons {
@@ -225,7 +225,7 @@
   flex-direction: column;
   width: 100%;
   border-radius: 9px 9px 0 0;
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
 }
 
@@ -268,7 +268,7 @@
 }
 
 .buttonOverride {
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
   font-weight: 700 !important;
 }
@@ -276,9 +276,6 @@
 .buttonOverride:hover {
   background: rgb(19, 44, 60) !important;
 }
-
-
-
 
 .swapIconContainer {
   width: 100%;
@@ -290,7 +287,7 @@
 }
 
 .swapIconSubContainer {
-  background: #161B2C;
+  background: #161b2c;
   border-radius: 9px;
   height: 38px;
   z-index: 1;
@@ -300,7 +297,7 @@
   cursor: pointer;
   padding: 6px;
   font-size: 30px !important;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   margin: 4px;
   border-radius: 6px;
 }
@@ -315,7 +312,7 @@
   border-radius: 10px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
 }
 
 .massiveInputAssetSelect {
@@ -337,7 +334,7 @@
 .displayAssetIconSmall {
   border: 1px solid rgba(126, 153, 153, 0.5);
   border-radius: 30px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   padding: 6px;
 }
 
@@ -366,7 +363,7 @@
 .displayAssetIcon {
   border: 1px solid rgba(126, 153, 176, 0.3);
   border-radius: 50px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   width: 100px;
   height: 100px;
   padding: 10px;
@@ -378,7 +375,7 @@
   border-radius: 10px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
 }
 
 .mediumInputAssetSelect {
@@ -410,7 +407,7 @@
 .mediumdisplayAssetIcon {
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 50px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   width: 50px;
   height: 50px;
   padding: 5px;
@@ -449,7 +446,7 @@
 .depositInfoHeading {
   width: 100%;
   font-weight: 700 !important;
-  color: #06D3D7 !important;
+  color: #9b9b9b !important;
   padding-bottom: 15px !important;
   border-bottom: 1px solid rgba(126, 153, 176, 0.2);
   font-size: 14px !important;
@@ -509,7 +506,7 @@
   align-items: center;
   justify-content: center;
   background: none;
-  border: 1px solid #212B48;
+  border: 1px solid #212b48;
   border-radius: 10px;
   width: calc(100% - 50px);
   margin: 20px 25px 0 25px;
@@ -523,7 +520,7 @@
 }
 
 .backIcon {
-  color: #06D3D7 !important;
+  color: #9b9b9b !important;
 }
 
 .titleText {
@@ -538,7 +535,7 @@
   border-radius: 10px;
   width: 100%;
   align-items: center;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
 }
 
 .mediumInputAssetSelect {
@@ -570,7 +567,7 @@
 .mediumdisplayAssetIcon {
   border: 1px solid rgba(128, 128, 128, 0.5);
   border-radius: 50px;
-  background: rgb(33, 43, 72);
+  background: rgb(53, 53, 53);
   width: 50px;
   height: 50px;
   padding: 5px;
@@ -590,17 +587,17 @@
 .toggleOption {
   padding: 20px;
   border-radius: 8px;
-  color: #7E99B0;
+  color: #7e99b0;
 }
 
 .toggleOption:hover {
-  background: rgb(23, 52, 72) !important;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
 }
 
 .toggleOption.active {
-  border: 1px solid #06D3D7;
-  background: rgb(23, 52, 72) !important;
+  border: 1px solid #9b9b9b;
+  background: rgb(52, 52, 52) !important;
   color: rgb(6, 211, 215) !important;
 }
 
@@ -670,5 +667,7 @@
     width: calc(100% - 60px);
   }
 
-  .helpIcon { display: none; }
+  .helpIcon {
+    display: none;
+  }
 }
