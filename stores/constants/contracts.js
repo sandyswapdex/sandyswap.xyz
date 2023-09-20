@@ -1,13 +1,13 @@
 import abis from "../abis";
 
-export const GOV_TOKEN_ADDRESS = "0xea11ffe430716d48ff749d04cffbddf7c2618f0d";
+export const GOV_TOKEN_ADDRESS = "0x2fb07861dbcfdd08883b0629c49c94320acbb7bc";
 export const GOV_TOKEN_NAME = "Sandy";
 export const GOV_TOKEN_SYMBOL = "SANDY";
 export const GOV_TOKEN_DECIMALS = 18;
 export const GOV_TOKEN_LOGO = "https://prod.solidly.exchange/Sandy Swap-O.svg";
 export const GOV_TOKEN_ABI = abis.tokenABI;
 
-export const VE_TOKEN_ADDRESS = "0xF7140bf00E5Dca2bc1117B2e088A3105f5515F18";
+export const VE_TOKEN_ADDRESS = "0xb3c592690243982633386f4457a05991c0de01e6";
 export const VE_TOKEN_NAME = "veSANDY";
 export const VE_TOKEN_SYMBOL = "veSANDY";
 export const VE_TOKEN_DECIMALS = 18;
@@ -33,10 +33,10 @@ export const FACTORY_ABI = abis.factoryABI;
 export const ROUTER_ADDRESS = "0x385c825c14492fc5911e61380d0d25dd99cd4922";
 export const ROUTER_ABI = abis.routerABI;
 
-export const VE_DIST_ADDRESS = "0xfd96d121ddc5aaf1ca77f99411190e4818a79884";
+export const VE_DIST_ADDRESS = "0xc004ebf475047aab9dca032e191c67333898b125";
 export const VE_DIST_ABI = abis.veDistABI;
 
-export const VOTER_ADDRESS = "0x975cccf9198def59c9d745b4d8ae1ea6bdd1b3ea";
+export const VOTER_ADDRESS = "0xef8ab0e7807553bfe4a0e2274c2e3c78cf94cd10";
 export const VOTER_ABI = abis.voterABI;
 
 export const ERC20_ABI = abis.erc20ABI;
