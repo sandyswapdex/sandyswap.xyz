@@ -45,7 +45,7 @@
 }
 
 .isWhitelist {
-  color: rgb(6, 211, 215) !important;
+  color: rgb(6, 6, 6) !important;
 }
 
 .notWhitelist {
@@ -64,15 +64,15 @@
 }
 
 .buttonOverride {
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
   font-weight: 700 !important;
   width: 100%;
   min-width: 200px !important;
 }
 
 .buttonOverride:hover {
-  background: rgb(19, 44, 60) !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 .loadingCircle {

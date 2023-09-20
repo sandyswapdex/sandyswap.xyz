@@ -559,13 +559,13 @@
 }
 
 .buttonOverride {
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
   font-weight: 700 !important;
 }
 
 .buttonOverride:hover {
-  background: rgb(19, 44, 60) !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 .route {
@@ -620,9 +620,9 @@
 .quoteError {
   font-size: 13px !important;
   font-weight: 200 !important;
-  border: 1px solid rgb(6, 211, 215) !important;
+  border: 1px solid rgb(6, 6, 6) !important;
   border-radius: 10px;
-  background: rgb(52, 52, 52) !important;
+  background: rgb(230, 230, 230) !important;
   padding: 24px !important;
   min-width: 100%;
 }
@@ -637,9 +637,9 @@
 .warningWarning {
   font-size: 13px !important;
   font-weight: 200 !important;
-  border: 1px solid rgb(6, 211, 215) !important;
+  border: 1px solid rgb(6, 6, 6) !important;
   border-radius: 10px;
-  background: rgb(52, 52, 52) !important;
+  background: rgb(230, 230, 230) !important;
   padding: 24px !important;
   min-width: 100%;
 }

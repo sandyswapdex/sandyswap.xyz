@@ -225,12 +225,12 @@
   flex-direction: column;
   width: 100%;
   border-radius: 9px 9px 0 0;
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
 }
 
 .toggleButtons:hover {
-  background: rgb(19, 44, 60) !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 .button {
@@ -240,7 +240,7 @@
   transition: none !important;
   opacity: 1;
   background: none !important;
-  color: rgb(6, 211, 215) !important;
+  color: rgb(6, 6, 6) !important;
 }
 
 /* .buttonActive {
@@ -268,13 +268,13 @@
 }
 
 .buttonOverride {
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
   font-weight: 700 !important;
 }
 
 .buttonOverride:hover {
-  background: rgb(19, 44, 60) !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 .swapIconContainer {
@@ -506,7 +506,7 @@
   align-items: center;
   justify-content: center;
   background: none;
-  border: 1px solid #212b48;
+  border: 1px solid #eee;
   border-radius: 10px;
   width: calc(100% - 50px);
   margin: 20px 25px 0 25px;
@@ -591,14 +591,14 @@
 }
 
 .toggleOption:hover {
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
 }
 
 .toggleOption.active {
   border: 1px solid #9b9b9b;
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
 }
 
 .toggleOptionText {

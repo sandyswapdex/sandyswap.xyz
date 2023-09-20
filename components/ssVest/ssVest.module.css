@@ -186,13 +186,13 @@
 }
 
 .buttonOverride {
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
   font-weight: 700 !important;
 }
 
 .buttonOverride:hover {
-  background: rgb(19, 44, 60) !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 .toggleButtons {
@@ -436,7 +436,7 @@
   align-items: center;
   justify-content: center;
   background: none;
-  border: 1px solid #212b48;
+  border: 1px solid #eee;
   border-radius: 10px;
   width: calc(100% - 0px);
   margin: 0px 0px 15px 0px;

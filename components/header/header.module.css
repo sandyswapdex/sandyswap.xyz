@@ -154,7 +154,7 @@
 
 .switchNetworkBtn:hover {
   background: rgba(6, 211, 215, 1) !important;
-  color: #111729 !important;
+  color: #111 !important;
   text-transform: none !important;
   border: 1px solid rgba(6, 211, 215, 1) !important;
   transform: scale(0.9);
@@ -323,9 +323,9 @@
 .testnetDisclaimerText {
   font-size: 13px !important;
   font-weight: 200 !important;
-  border: 1px solid rgb(6, 211, 215) !important;
+  border: 1px solid rgb(6, 6, 6) !important;
   border-radius: 10px;
-  background: rgb(52, 52, 52) !important;
+  background: rgb(230, 230, 230) !important;
   padding: 16px !important;
 }
 

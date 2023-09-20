@@ -344,11 +344,11 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "30px",
   },
   buttonOverride: {
-    color: "rgb(6, 211, 215)",
+    color: "rgb(215, 215, 215)",
     background: "rgb(52, 52, 52)",
     fontWeight: "700",
     "&:hover": {
-      background: "rgb(19, 44, 60)",
+      background: "#444",
     },
   },
   toolbar: {
@@ -363,7 +363,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-end",
   },
   filterButton: {
-    background: "#111729",
+    background: "#111",
     border: "1px solid rgba(126,153,176,0.3)",
     color: "#9b9b9b",
     marginRight: "30px",

@@ -80,6 +80,9 @@ function Home({ changeTheme }) {
 
         <Grid container spacing={3} className={classes.homeContentMain}>
           <Grid item lg={12} md={12} sm={12} xs={12}>
+            <img className={classes.logo} src="/images/logo.png" />
+          </Grid>
+          <Grid item lg={12} md={12} sm={12} xs={12}>
             <Typography variant="h1" className={classes.secTitle}>
               Welcome to SandySwap
             </Typography>

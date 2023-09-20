@@ -262,12 +262,12 @@ const useStyles = makeStyles((theme) => ({
     height: "35px",
   },
   buttonOverride: {
-    color: "rgb(6, 211, 215)",
+    color: "rgb(215, 215, 215)",
     background: "rgb(52, 52, 52)",
     fontWeight: "700",
     width: "100%",
     "&:hover": {
-      background: "rgb(19, 44, 60)",
+      background: "#444",
     },
   },
   toolbar: {

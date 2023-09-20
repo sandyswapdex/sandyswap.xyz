@@ -327,14 +327,14 @@ a.linkz {
     padding: 15px 0px !important;
     border-radius: 0px !important;
     z-index: 10020;
-    background: #111729;
+    background: #111;
   }
   .socials {
     display: none;
   }
   .navigationContent {
     /* display: none; */
-    background: #111729;
+    background: #111;
     position: fixed;
     left: 0;
     top: 60px;
@@ -500,7 +500,7 @@ a.linkz {
   }
 
   .navigationContent {
-    background: #111729;
+    background: #111;
     position: fixed;
     left: 0;
     top: 45px;

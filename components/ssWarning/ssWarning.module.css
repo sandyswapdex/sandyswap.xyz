@@ -59,7 +59,7 @@
 }
 
 .primaryButton {
-  background: rgb(52, 52, 52) !important;
+  background: rgb(230, 230, 230) !important;
   font-weight: 700 !important;
   width: 100%;
   margin-bottom: 15px !important;
@@ -73,7 +73,7 @@
   font: normal normal bold 14px/19px Inter !important;
   letter-spacing: 0px !important;
   text-transform: none;
-  color: rgb(6, 211, 215) !important;
+  color: rgb(6, 6, 6) !important;
 }
 
 .buttonTextSecondary {

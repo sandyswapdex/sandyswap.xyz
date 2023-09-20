@@ -26,7 +26,7 @@
 .actionButtons {
   padding: 10px 0;
   min-width: 560px !important;
-  background: #11172a !important;
+  background: #111 !important;
   position: fixed;
   bottom: 30px;
   left: 50%;
@@ -70,27 +70,27 @@
 }
 
 .buttonOverride {
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
   font-weight: 700 !important;
   width: 100%;
   min-width: 200px !important;
 }
 
 .buttonOverride:hover {
-  background: rgb(19, 44, 60) !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 .buttonOverrideFixed {
-  background: rgb(52, 52, 52) !important;
-  color: rgb(6, 211, 215) !important;
+  background: rgb(230, 230, 230) !important;
+  color: rgb(6, 6, 6) !important;
   font-weight: 700 !important;
   min-width: 200px !important;
   max-height: 48px;
 }
 
 .buttonOverrideFixed:hover {
-  background: rgb(19, 44, 60) !important;
+  background: rgb(255, 255, 255) !important;
 }
 
 .tokenIDContainer {
@@ -177,7 +177,7 @@
   .actionButtons {
     padding: 10px 0;
     min-width: 100% !important;
-    background: #11172a !important;
+    background: #111 !important;
     position: fixed;
     bottom: 0px;
     left: 0;
