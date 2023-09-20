@@ -8,16 +8,16 @@ const theme = createTheme({
     ...coreTheme.palette,
     background: {
       default: "#131929",
-      paper: "rgb(25, 33, 56)"
+      paper: "rgb(25, 33, 56)",
     },
     primary: {
-      main: "#06d3d7"
+      main: "#06d3d7",
     },
     text: {
       primary: "rgba(255, 255, 255, 0.87)",
       secondary: "#7E99B0",
     },
-    type: "dark"
+    type: "dark",
   },
   overrides: {
     ...coreTheme.overrides,
@@ -28,15 +28,15 @@ const theme = createTheme({
         padding: "0px",
         minWidth: "auto",
         "@media (min-width: 960px)": {
-          minWidth: "400px"
-        }
+          minWidth: "400px",
+        },
       },
       message: {
-        padding: "0px"
+        padding: "0px",
       },
       action: {
-        marginRight: "0px"
-      }
+        marginRight: "0px",
+      },
     },
     MuiTooltip: {
       tooltip: {
@@ -44,10 +44,10 @@ const theme = createTheme({
         border: "1px solid #fff",
         borderRadius: "8px",
         color: "#000",
-        fontSize: "13px"
-      }
-    }
-  }
+        fontSize: "13px",
+      },
+    },
+  },
 });
 
 export default theme;

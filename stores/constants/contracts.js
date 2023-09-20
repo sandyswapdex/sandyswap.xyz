@@ -25,12 +25,12 @@ export const ETH_NAME = "Ethereum";
 export const ETH_SYMBOL = "ETH";
 export const ETH_DECIMALS = 18;
 export const ETH_LOGO =
-  "https://assets.coingecko.com/coins/images/4001/large/ethereum.png";
+  "https://s2.coinmarketcap.com/static/img/coins/128x128/1027.png";
 
 export const FACTORY_ADDRESS = "0xdb9908b6e0b87338194ae8627583194994bd992d";
 export const FACTORY_ABI = abis.factoryABI;
 
-export const ROUTER_ADDRESS = "0x6271ebf79b8f8a92b13bc41901b7565dea218f4d";
+export const ROUTER_ADDRESS = "0x385c825c14492fc5911e61380d0d25dd99cd4922";
 export const ROUTER_ABI = abis.routerABI;
 
 export const VE_DIST_ADDRESS = "0xfd96d121ddc5aaf1ca77f99411190e4818a79884";

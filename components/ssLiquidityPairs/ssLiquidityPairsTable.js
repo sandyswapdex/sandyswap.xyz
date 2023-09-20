@@ -492,56 +492,10 @@ const EnhancedTableToolbar = (props) => {
   const localToggles = getLocalToggles();
 
   const [search, setSearch] = useState("");
-  const [toggleActive, setToggleActive] = useState(localToggles.toggleActive);
-  const [toggleActiveGauge, setToggleActiveGauge] = useState(
-    localToggles.toggleActiveGauge
-  );
-  const [toggleStable, setToggleStable] = useState(localToggles.toggleStable);
-  const [toggleVariable, setToggleVariable] = useState(
-    localToggles.toggleVariable
-  );
 
   const onSearchChanged = (event) => {
     setSearch(event.target.value);
     props.setSearch(event.target.value);
-  };
-
-  const onToggle = (event) => {
-    const localToggles = getLocalToggles();
-
-    switch (event.target.name) {
-      case "toggleActive":
-        setToggleActive(event.target.checked);
-        props.setToggleActive(event.target.checked);
-        localToggles.toggleActive = event.target.checked;
-        break;
-      case "toggleActiveGauge":
-        setToggleActiveGauge(event.target.checked);
-        props.setToggleActiveGauge(event.target.checked);
-        localToggles.toggleActiveGauge = event.target.checked;
-        break;
-      case "toggleStable":
-        setToggleStable(event.target.checked);
-        props.setToggleStable(event.target.checked);
-        localToggles.toggleStable = event.target.checked;
-        break;
-      case "toggleVariable":
-        setToggleVariable(event.target.checked);
-        props.setToggleVariable(event.target.checked);
-        localToggles.toggleVariable = event.target.checked;
-        break;
-      default:
-    }
-
-    // set locally saved toggles
-    try {
-      localStorage.setItem(
-        "solidly-pairsToggle-v1",
-        JSON.stringify(localToggles)
-      );
-    } catch (ex) {
-      console.log(ex);
-    }
   };
 
   const onCreate = () => {
@@ -575,12 +529,12 @@ const EnhancedTableToolbar = (props) => {
             </Typography>
           </Button>
         </Grid>
-        <Grid item lg={9} md={9} sm={10} xs={10}>
+        <Grid item lg={10} md={10} sm={10} xs={10}>
           <TextField
             className={classes.searchContainer}
             variant="outlined"
             fullWidth
-            placeholder="ETH, MIM, 0x..."
+            placeholder="ETH, USDC, 0x..."
             value={search}
             onChange={onSearchChanged}
             InputProps={{
@@ -592,20 +546,9 @@ const EnhancedTableToolbar = (props) => {
             }}
           />
         </Grid>
-        <Grid item lg={1} md={true} sm={2} xs={2}>
-          <Tooltip placement="top" title="Filter list">
-            <IconButton
-              onClick={handleClick}
-              className={classes.filterButton}
-              aria-label="filter list"
-            >
-              <FilterListIcon />
-            </IconButton>
-          </Tooltip>
-        </Grid>
       </Grid>
 
-      <Popper
+      {/* <Popper
         id={id}
         open={open}
         anchorEl={anchorEl}
@@ -685,7 +628,7 @@ const EnhancedTableToolbar = (props) => {
             </div>
           </Fade>
         )}
-      </Popper>
+      </Popper> */}
     </Toolbar>
   );
 };
@@ -699,17 +642,7 @@ export default function EnhancedTable({ pairs }) {
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [page, setPage] = useState(0);
 
-  const localToggles = getLocalToggles();
-
   const [search, setSearch] = useState("");
-  const [toggleActive, setToggleActive] = useState(localToggles.toggleActive);
-  const [toggleActiveGauge, setToggleActiveGauge] = useState(
-    localToggles.toggleActiveGauge
-  );
-  const [toggleStable, setToggleStable] = useState(localToggles.toggleStable);
-  const [toggleVariable, setToggleVariable] = useState(
-    localToggles.toggleVariable
-  );
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
@@ -782,62 +715,34 @@ export default function EnhancedTable({ pairs }) {
     setPage(0);
   };
 
-  const filteredPairs = pairs
-    .filter((pair) => {
-      if (!search || search === "") {
-        return true;
-      }
-
-      const searchLower = search.toLowerCase();
-
-      if (
-        pair.symbol.toLowerCase().includes(searchLower) ||
-        pair.address.toLowerCase().includes(searchLower) ||
-        pair.token0.symbol.toLowerCase().includes(searchLower) ||
-        pair.token0.address.toLowerCase().includes(searchLower) ||
-        pair.token0.name.toLowerCase().includes(searchLower) ||
-        pair.token1.symbol.toLowerCase().includes(searchLower) ||
-        pair.token1.address.toLowerCase().includes(searchLower) ||
-        pair.token1.name.toLowerCase().includes(searchLower)
-      ) {
-        return true;
-      }
-
-      return false;
-    })
-    .filter((pair) => {
-      if (toggleStable !== true && pair.isStable === true) {
-        return false;
-      }
-      if (toggleVariable !== true && pair.isStable === false) {
-        return false;
-      }
-      if (toggleActiveGauge === true && (!pair.gauge || !pair.gauge.address)) {
-        return false;
-      }
-      if (toggleActive === true) {
-        if (
-          !BigNumber(pair?.gauge?.balance).gt(0) &&
-          !BigNumber(pair?.balance).gt(0)
-        ) {
-          return false;
-        }
-      }
-
+  const filteredPairs = pairs.filter((pair) => {
+    if (!search || search === "") {
       return true;
-    });
+    }
+
+    const searchLower = search.toLowerCase();
+
+    if (
+      pair.symbol.toLowerCase().includes(searchLower) ||
+      pair.address.toLowerCase().includes(searchLower) ||
+      pair.token0.symbol.toLowerCase().includes(searchLower) ||
+      pair.token0.address.toLowerCase().includes(searchLower) ||
+      pair.token0.name.toLowerCase().includes(searchLower) ||
+      pair.token1.symbol.toLowerCase().includes(searchLower) ||
+      pair.token1.address.toLowerCase().includes(searchLower) ||
+      pair.token1.name.toLowerCase().includes(searchLower)
+    ) {
+      return true;
+    }
+
+    return false;
+  });
 
   const emptyRows = 5 - Math.min(5, filteredPairs.length - page * 5);
 
   return (
     <div className={classes.root}>
-      <EnhancedTableToolbar
-        setSearch={setSearch}
-        setToggleActive={setToggleActive}
-        setToggleActiveGauge={setToggleActiveGauge}
-        setToggleStable={setToggleStable}
-        setToggleVariable={setToggleVariable}
-      />
+      <EnhancedTableToolbar setSearch={setSearch} />
       <Paper elevation={0} className={classes.tableContainer}>
         <TableContainer>
           <Table

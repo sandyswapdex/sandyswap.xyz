@@ -9,9 +9,9 @@ const theme = createTheme({
     ...coreTheme.palette,
     background: {
       default: "#F0F2F5",
-      paper: "#ffffff"
+      paper: "#ffffff",
     },
-    type: "light"
+    type: "light",
   },
   overrides: {
     ...coreTheme.overrides,
@@ -22,20 +22,20 @@ const theme = createTheme({
         padding: "0px",
         minWidth: "auto",
         "@media (min-width: 960px)": {
-          minWidth: "400px"
-        }
+          minWidth: "400px",
+        },
       },
       message: {
-        padding: "0px"
+        padding: "0px",
       },
       action: {
-        marginRight: "0px"
-      }
+        marginRight: "0px",
+      },
     },
     headerContainer: {
       root: {
-        backgroundColor: "#FF00aa"
-      }
+        backgroundColor: "#FF00aa",
+      },
     },
     MuiTooltip: {
       tooltip: {
@@ -43,10 +43,10 @@ const theme = createTheme({
         border: "1px solid #000",
         borderRadius: "8px",
         color: "#FFF",
-        fontSize: "13px"
-      }
-    }
-  }
+        fontSize: "13px",
+      },
+    },
+  },
 });
 
 export default theme;

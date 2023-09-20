@@ -105,6 +105,19 @@ export default function ssLiquidityManage() {
       }
     }
 
+    const eth = {
+      address: "ETH",
+      balance: storeAssetOptions.find((a) => a.symbol === "ETH").balance,
+      decimals: 18,
+      isWhitelisted: true,
+      logoURI:
+        "https://github.com/veSync/tokens/raw/main/icons/0x5aea5775959fbc2557cc8789bc1bf90a239d9a91/logo.png",
+      name: "Ether",
+      nativeChainAddress: "",
+      nativeChainId: "",
+      symbol: "ETH",
+    };
+
     if (router.query.address && router.query.address !== "create") {
       setPairReadOnly(true);
 
@@ -115,8 +128,15 @@ export default function ssLiquidityManage() {
 
       if (pp) {
         setWithdrawAsset(pp);
-        setAsset0(pp.token0);
-        setAsset1(pp.token1);
+
+        if (pp.token0.symbol == "WETH") {
+          setAsset0({ ...eth, price: pp.token0.price });
+        } else setAsset0(pp.token0);
+
+        if (pp.token1.symbol == "WETH") {
+          setAsset1({ ...eth, price: pp.token1.price });
+        } else setAsset1(pp.token1);
+
         setStable(pp.isStable);
       }
 

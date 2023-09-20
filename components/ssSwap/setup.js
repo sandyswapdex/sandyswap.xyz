@@ -103,11 +103,11 @@ function Setup() {
         setFromAssetOptions(baseAsset);
 
         if (baseAsset.length > 0 && toAssetValue == null) {
-          setToAssetValue(baseAsset[0]);
+          setToAssetValue(baseAsset.find((a) => a.symbol === "USDC"));
         }
 
         if (baseAsset.length > 0 && fromAssetValue == null) {
-          setFromAssetValue(baseAsset[1]);
+          setFromAssetValue(baseAsset.find((a) => a.symbol === "ETH"));
         }
 
         forceUpdate();
@@ -306,7 +306,6 @@ function Setup() {
 
     if (!quote) {
       return;
-      <div className={classes.quoteLoader}> </div>;
     }
 
     return (
