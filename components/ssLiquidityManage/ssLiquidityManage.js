@@ -107,7 +107,7 @@ export default function ssLiquidityManage() {
 
     const eth = {
       address: "ETH",
-      balance: storeAssetOptions.find((a) => a.symbol === "ETH").balance,
+      balance: storeAssetOptions.find((a) => a.symbol === "ETH")?.balance || 0,
       decimals: 18,
       isWhitelisted: true,
       logoURI:
