@@ -154,12 +154,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("/images/sphere_001.png");
+  background-image: url("/images/logo.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
   mix-blend-mode: lighten;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 @media screen and (max-width: 960px) {
