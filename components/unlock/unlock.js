@@ -314,7 +314,7 @@ function MyComponent(props) {
                 >
                   {display}
                 </Typography>
-                <Typography style={{ color: "#7E99B0" }} variant={"body2"}>
+                <Typography style={{ color: "#7E7e7e" }} variant={"body2"}>
                   {descriptor}
                 </Typography>
                 {activating && (

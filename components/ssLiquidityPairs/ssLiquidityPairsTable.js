@@ -546,7 +546,7 @@ const EnhancedTableToolbar = (props) => {
         <Grid item lg={10} md={10} sm={12} xs={12}>
           <div className={classes.disclaimerContainer}>
             <Typography className={classes.disclaimer}>
-              Supply liquidity and pre-mine $SANDY 🚀. Early users that provide
+              Supply liquidity and pre-mine SANDY 🚀. Early users that provide
               liquidity will receive the highest APY.
             </Typography>
           </div>

@@ -252,8 +252,8 @@ export default function ssRewards() {
           <Grid item lg={true} md={true} sm={false} xs={false}>
             <div className={classes.disclaimerContainer}>
               <Typography className={classes.disclaimer}>
-                You can now pre-mine $SANDY. $SANDY will become tradable once
-                the bootstrap period finishes.
+                SANDY will claimed here will be tradable after the bootstrap
+                period. Happy Farming 🌾
               </Typography>
             </div>
           </Grid>

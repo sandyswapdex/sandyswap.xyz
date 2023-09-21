@@ -853,6 +853,7 @@ export default function EnhancedTable({ rewards, vestNFTs, tokenID }) {
                                   className={classes.textSpacedPadded}
                                   color="textSecondary"
                                 >
+                                  {" "}
                                   {row.token0?.symbol}
                                 </Typography>
                               </div>
@@ -883,6 +884,7 @@ export default function EnhancedTable({ rewards, vestNFTs, tokenID }) {
                                   className={classes.textSpacedPadded}
                                   color="textSecondary"
                                 >
+                                  {" "}
                                   {row.token1?.symbol}
                                 </Typography>
                               </div>
@@ -922,6 +924,7 @@ export default function EnhancedTable({ rewards, vestNFTs, tokenID }) {
                                   className={`${classes.textSpaced} ${classes.symbol}`}
                                   color="textSecondary"
                                 >
+                                  {" "}
                                   {row.rewardToken.symbol}
                                 </Typography>
                               </div>

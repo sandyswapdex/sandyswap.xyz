@@ -61,7 +61,7 @@ function Home({ changeTheme }) {
               className={classes.buttonEnterSingle}
               onClick={() => router.push("/liquidity")}
             >
-              Pre-Mine $SANDY
+              Pre-Mine SANDY
             </Button>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12}>

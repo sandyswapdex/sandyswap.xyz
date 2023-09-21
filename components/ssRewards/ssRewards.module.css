@@ -15,7 +15,7 @@
 }
 
 .helpText {
-  color: rgba(126, 153, 176, 0.9);
+  color: rgba(150, 150, 150, 0.9);
   margin: 0 15px 0 0 !important;
   padding: 15px 0;
 }
@@ -132,10 +132,10 @@
 .disclaimer {
   font-size: 13px !important;
   font-weight: 200 !important;
-  color: #000;
-  border: 1px solid rgb(6, 6, 6) !important;
+  color: #fff;
+  border: 2px dotted #fff !important;
   border-radius: 10px;
-  background: rgb(230, 230, 230) !important;
+  background: rgb(20, 20, 20) !important;
   padding: 21.5px !important;
 }
 
