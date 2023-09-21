@@ -104,7 +104,8 @@
   font-size: 16px !important;
   margin-bottom: 20px !important;
   line-height: 1.7rem !important;
-  color: #7e99b0 !important;
+  color: #fff !important;
+  font-weight: 700;
 }
 
 .buttonInfo {
@@ -145,6 +146,16 @@
 .buttonEnter,
 .buttonEnterSingle {
   background: rgba(255, 255, 255, 0.9) !important;
+  font-family: "Monument" !important;
+  padding: 12px 20px 10px 20px !important;
+  min-width: 100% !important;
+  text-transform: capitalize !important;
+  color: #222 !important;
+}
+
+.buttonEnter,
+.buttonEnterTwo {
+  background: rgba(150, 150, 150, 0.9) !important;
   font-family: "Monument" !important;
   padding: 12px 20px 10px 20px !important;
   min-width: 100% !important;
@@ -194,7 +205,7 @@
     font-size: 14px !important;
     margin-bottom: 20px !important;
     line-height: 1.2rem !important;
-    color: #7e99b0 !important;
+    color: #fff !important;
   }
 
   .buttonInfo,
@@ -240,7 +251,7 @@
     font-size: 13px !important;
     margin-bottom: 20px !important;
     line-height: 1.2rem !important;
-    color: #7e99b0 !important;
+    color: #fff !important;
   }
 
   .mainHeading {

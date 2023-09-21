@@ -1,10 +1,32 @@
-import { Paper } from "@material-ui/core";
+import { Link, Paper, Typography } from "@material-ui/core";
 import Setup from "./setup";
 import classes from "./ssSwap.module.css";
+import { useRouter } from "next/router";
 
 function Swap() {
+  const router = useRouter();
+
   return (
     <div className={classes.newSwapContainer}>
+      <Paper className={classes.miningContainer}>
+        <Typography variant="h2" className={classes.miningContainerh2}>
+          Protocol is in Bootstrap mode 🎉
+        </Typography>
+        <Typography variant="body1" className={classes.miningContainerBody}>
+          <Link onClick={() => router.push("/liquidity")}>
+            Supply liquidity
+          </Link>{" "}
+          to the protocol to start pre-mining $SANDY as we bootstrap liquidity
+          for the protocol.
+        </Typography>
+        <Typography variant="body1" className={classes.miningContainerBody}>
+          Read the{" "}
+          <Link href="https://docs.sandyswap.xyz/pre-mine-sandy">
+            documentation
+          </Link>{" "}
+          to learn more about how to pre-mine $SANDY.
+        </Typography>
+      </Paper>
       <Paper elevation={0} className={classes.swapContainer}>
         <Setup />
       </Paper>

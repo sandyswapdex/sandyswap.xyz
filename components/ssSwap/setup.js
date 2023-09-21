@@ -564,7 +564,8 @@ function Setup() {
           onClick={onSwap}
         >
           <Typography className={classes.actionButtonText}>
-            {loading ? `Swapping` : `Swap`}
+            {/* {loading ? `Swapping` : `Swap`} */}
+            Swap
           </Typography>
           {loading && (
             <CircularProgress size={10} className={classes.loadingCircle} />

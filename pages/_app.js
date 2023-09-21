@@ -15,6 +15,7 @@ import stores from "../stores/index.js";
 
 import { ACTIONS } from "../stores/constants";
 import "../styles/global.css";
+import Bg from "./bg.js";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -90,6 +91,7 @@ export default function MyApp({ Component, pageProps }) {
       <ThemeProvider theme={themeConfig}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        <Bg />
         {validateConfigured() && (
           <Layout changeTheme={changeTheme}>
             <Component {...pageProps} changeTheme={changeTheme} />
