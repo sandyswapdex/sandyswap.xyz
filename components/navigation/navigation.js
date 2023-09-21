@@ -140,10 +140,10 @@ function Navigation(props) {
         {renderSubNav("Home", "home")}
         {renderSubNav("Swap", "swap")}
         {renderSubNav("Liquidity", "liquidity")}
-        {renderSubNav("Vest", "vest")}
+        {/* {renderSubNav("Vest", "vest")} */}
         {renderSubNav("Vote", "vote")}
         {renderSubNav("Rewards", "rewards")}
-        {renderSubNav("Whitelist", "whitelist")}
+        {/* {renderSubNav("Whitelist", "whitelist")} */}
       </ToggleButtonGroup>
     );
   };

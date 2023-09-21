@@ -164,18 +164,18 @@ const headCells = [
     disablePadding: false,
     label: "Total Pool Amount",
   },
-  {
-    id: "stakedAmount",
-    numeric: true,
-    disablePadding: false,
-    label: "Total Pool Staked",
-  },
   // {
-  //   id: 'apy',
+  //   id: "stakedAmount",
   //   numeric: true,
   //   disablePadding: false,
-  //   label: 'APY',
+  //   label: "Total Pool Staked",
   // },
+  {
+    id: "apy",
+    numeric: true,
+    disablePadding: false,
+    label: "APY",
+  },
   {
     id: "",
     numeric: true,
@@ -1085,7 +1085,7 @@ export default function EnhancedTable({ pairs }) {
                           </div>
                         )}
                       </TableCell>
-                      {row && row.gauge && row.gauge.address && (
+                      {/* {row && row.gauge && row.gauge.address && (
                         <TableCell
                           className={(classes.cell, classes.hiddenMobile)}
                           align="right"
@@ -1167,8 +1167,8 @@ export default function EnhancedTable({ pairs }) {
                             </div>
                           )}
                         </TableCell>
-                      )}
-                      {!(row && row.gauge && row.gauge.address) && (
+                      )} */}
+                      {/* {!(row && row.gauge && row.gauge.address) && (
                         <TableCell
                           className={(classes.cell, classes.hiddenMobile)}
                           align="right"
@@ -1180,21 +1180,24 @@ export default function EnhancedTable({ pairs }) {
                             Gauge not available
                           </Typography>
                         </TableCell>
-                      )}
-                      {/*<TableCell className={classes.cell} align='right'>
-                      <Grid container spacing={0}>
-                        <Grid item lg={10}>
-                          <Typography variant='h2' className={classes.textSpaced}>
-                            0.00%
-                          </Typography>
+                      )} */}
+                      <TableCell className={classes.cell} align="right">
+                        <Grid container spacing={0}>
+                          <Grid item lg={10}>
+                            <Typography
+                              variant="h2"
+                              className={classes.textSpaced}
+                            >
+                              0.00%
+                            </Typography>
+                          </Grid>
+                          <Grid item lg={2}>
+                            <Tooltip title={renderTooltip(row)}>
+                              <InfoOutlinedIcon className={classes.infoIcon} />
+                            </Tooltip>
+                          </Grid>
                         </Grid>
-                        <Grid item lg={2}>
-                        <Tooltip title={ renderTooltip(row)}>
-                          <InfoOutlinedIcon className={classes.infoIcon} />
-                        </Tooltip>
-                        </Grid>
-                      </Grid>
-                    </TableCell>*/}
+                      </TableCell>
                       <TableCell className={classes.cell} align="right">
                         <Button
                           variant="outlined"
