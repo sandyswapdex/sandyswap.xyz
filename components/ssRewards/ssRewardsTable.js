@@ -902,6 +902,7 @@ export default function EnhancedTable({ rewards, vestNFTs, tokenID }) {
                                   className={`${classes.textSpaced} ${classes.symbol}`}
                                   color="textSecondary"
                                 >
+                                  {" "}
                                   SANDY
                                 </Typography>
                               </div>
