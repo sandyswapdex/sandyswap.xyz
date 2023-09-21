@@ -233,6 +233,20 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
   },
+  disclaimerContainer: {
+    display: "flex",
+    alignItems: "center",
+    color: "#fff",
+    background: "rgb(30, 30, 30)",
+    padding: 15,
+    border: "2px dotted #fff",
+    borderRadius: 10,
+    height: "100%",
+    justifyContent: "center",
+  },
+  disclaimer: {
+    fontSize: "0.875rem",
+  },
   assetTableRow: {
     "&:hover": {
       background: "rgba(104,108,122,0.05)",
@@ -529,22 +543,13 @@ const EnhancedTableToolbar = (props) => {
             </Typography>
           </Button>
         </Grid>
-        <Grid item lg={10} md={10} sm={10} xs={10}>
-          <TextField
-            className={classes.searchContainer}
-            variant="outlined"
-            fullWidth
-            placeholder="ETH, USDC, 0x..."
-            value={search}
-            onChange={onSearchChanged}
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
+        <Grid item lg={10} md={10} sm={12} xs={12}>
+          <div className={classes.disclaimerContainer}>
+            <Typography className={classes.disclaimer}>
+              Supply liquidity and pre-mine $SANDY 🚀. Early users that provide
+              liquidity will receive the highest APY.
+            </Typography>
+          </div>
         </Grid>
       </Grid>
 
@@ -739,6 +744,10 @@ export default function EnhancedTable({ pairs }) {
   });
 
   const emptyRows = 5 - Math.min(5, filteredPairs.length - page * 5);
+
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
   return (
     <div className={classes.root}>
@@ -1085,102 +1094,6 @@ export default function EnhancedTable({ pairs }) {
                           </div>
                         )}
                       </TableCell>
-                      {/* {row && row.gauge && row.gauge.address && (
-                        <TableCell
-                          className={(classes.cell, classes.hiddenMobile)}
-                          align="right"
-                        >
-                          {row &&
-                            row.gauge &&
-                            row.gauge.reserve0 &&
-                            row.token0 && (
-                              <div className={classes.inlineEnd}>
-                                <Typography
-                                  variant="h2"
-                                  className={classes.textSpaced}
-                                >
-                                  {formatCurrency(row.gauge.reserve0)}
-                                </Typography>
-                                <Typography
-                                  variant="h5"
-                                  className={`${classes.textSpaced} ${classes.symbol}`}
-                                  color="textSecondary"
-                                >
-                                  {row.token0.symbol}
-                                </Typography>
-                              </div>
-                            )}
-                          {!(
-                            row &&
-                            row.gauge &&
-                            row.gauge.reserve0 &&
-                            row.token0
-                          ) && (
-                            <div className={classes.inlineEnd}>
-                              <Skeleton
-                                variant="rect"
-                                width={120}
-                                height={16}
-                                style={{
-                                  marginTop: "1px",
-                                  marginBottom: "1px",
-                                }}
-                              />
-                            </div>
-                          )}
-                          {row &&
-                            row.gauge &&
-                            row.gauge.reserve1 &&
-                            row.token1 && (
-                              <div className={classes.inlineEnd}>
-                                <Typography
-                                  variant="h2"
-                                  className={classes.textSpaced}
-                                >
-                                  {formatCurrency(row.gauge.reserve1)}
-                                </Typography>
-                                <Typography
-                                  variant="h5"
-                                  className={`${classes.textSpaced} ${classes.symbol}`}
-                                  color="textSecondary"
-                                >
-                                  {row.token1.symbol}
-                                </Typography>
-                              </div>
-                            )}
-                          {!(
-                            row &&
-                            row.gauge &&
-                            row.gauge.reserve1 &&
-                            row.token1
-                          ) && (
-                            <div className={classes.inlineEnd}>
-                              <Skeleton
-                                variant="rect"
-                                width={120}
-                                height={16}
-                                style={{
-                                  marginTop: "1px",
-                                  marginBottom: "1px",
-                                }}
-                              />
-                            </div>
-                          )}
-                        </TableCell>
-                      )} */}
-                      {/* {!(row && row.gauge && row.gauge.address) && (
-                        <TableCell
-                          className={(classes.cell, classes.hiddenMobile)}
-                          align="right"
-                        >
-                          <Typography
-                            variant="h2"
-                            className={classes.textSpaced}
-                          >
-                            Gauge not available
-                          </Typography>
-                        </TableCell>
-                      )} */}
                       <TableCell className={classes.cell} align="right">
                         <Grid container spacing={0}>
                           <Grid item lg={10}>
@@ -1188,14 +1101,17 @@ export default function EnhancedTable({ pairs }) {
                               variant="h2"
                               className={classes.textSpaced}
                             >
-                              0.00%
+                              {row && row.apr
+                                ? numberWithCommas(Math.floor(row.apr))
+                                : "0.00"}
+                              %
                             </Typography>
                           </Grid>
-                          <Grid item lg={2}>
+                          {/* <Grid item lg={2}>
                             <Tooltip title={renderTooltip(row)}>
                               <InfoOutlinedIcon className={classes.infoIcon} />
                             </Tooltip>
-                          </Grid>
+                          </Grid> */}
                         </Grid>
                       </TableCell>
                       <TableCell className={classes.cell} align="right">

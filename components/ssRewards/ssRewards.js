@@ -252,8 +252,8 @@ export default function ssRewards() {
           <Grid item lg={true} md={true} sm={false} xs={false}>
             <div className={classes.disclaimerContainer}>
               <Typography className={classes.disclaimer}>
-                You can now claim SANDY tokens as part of the pre-mine. SANDY
-                tokens will become tradable once the bootstrap period finishes.
+                You can now pre-mine $SANDY. $SANDY will become tradable once
+                the bootstrap period finishes.
               </Typography>
             </div>
           </Grid>
