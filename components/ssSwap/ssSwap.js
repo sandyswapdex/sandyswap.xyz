@@ -16,14 +16,14 @@ function Swap() {
           <Link onClick={() => router.push("/liquidity")}>
             Supply liquidity
           </Link>{" "}
-          and pre-mine SANDY as we bootstrap liquidity for the protocol.
+          and pre-mine SANDY as we bootstrap the protocol.
         </Typography>
         <Typography variant="body1" className={classes.miningContainerBody}>
-          Read the{" "}
+          Read our{" "}
           <Link href="https://docs.sandyswap.xyz/pre-mine-sandy">
             documentation
           </Link>{" "}
-          to learn more.
+          to learn more about how pre-mining works.
         </Typography>
       </Paper>
       <Paper elevation={0} className={classes.swapContainer}>
