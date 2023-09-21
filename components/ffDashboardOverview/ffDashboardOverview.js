@@ -378,7 +378,7 @@ export default function ffOverview() {
                 className={classes.itemContent}
               >
                 <Typography className={classes.title}>
-                  SOLID Balance:
+                  SANDY Balance:
                 </Typography>
                 <div className={classes.inline}>
                   <Typography className={classes.value}>
