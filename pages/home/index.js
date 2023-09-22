@@ -68,7 +68,7 @@ function Home({ changeTheme }) {
             <Button
               target="_blank"
               className={classes.buttonEnterTwo}
-              href="https://discord.sandyswap.xyz/"
+              href="https://docs.sandyswap.xyz/"
             >
               Read Docs
             </Button>
